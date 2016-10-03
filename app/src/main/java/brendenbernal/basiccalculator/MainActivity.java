@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("0 ");
+               screenText.append("0");
            }
        });
 
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("1 ");
+               screenText.append("1");
            }
        });
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("2 ");
+               screenText.append("2");
            }
        });
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("3 ");
+               screenText.append("3");
            }
        });
 
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("4 ");
+               screenText.append("4");
            }
        });
 
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("5 ");
+               screenText.append("5");
            }
        });
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("6 ");
+               screenText.append("6");
            }
        });
 
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("7 ");
+               screenText.append("7");
            }
        });
 
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("8 ");
+               screenText.append("8");
            }
        });
 
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("9 ");
+               screenText.append("9");
            }
        });
 
@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("+ ");
+               screenText.append(" + ");
            }
        });
 
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("- ");
+               screenText.append(" - ");
            }
        });
 
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("* ");
+               screenText.append(" * ");
            }
        });
 
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("/ ");
+               screenText.append(" / ");
            }
        });
 
@@ -198,28 +198,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               if(!(screenText.length()==0))
-               {
-                   screenText.setText(screenText.getText().delete(screenText.length() - 1, screenText.length()));
-                   //Editable temp = (screenText.getText().delete(screenText.length() - 1, screenText.length()));
-                   //temp.append(".");
-                   //screenText.setText();
-                   String checkingLast = screenText.getText().toString();
-                   String[] lastArray = checkingLast.split("");
-                   Log.d("split0", lastArray[0]);
-                   Log.d("split-1", lastArray[-1]);
-                   if(lastArray[-1] == " "){
-                       screenText.append(" .");
-                   }
-                   else{
-                       screenText.append(".");
-                   }
-                   //screenText.append(".");
-               }
-               else{
-                   screenText.append(".");
-               }
-               //screenText.append(".");
+               screenText.append(".");
            }
        });
 
@@ -228,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append("( ");
+               screenText.append(" ( ");
            }
        });
 
@@ -237,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick (View v)
            {
-               screenText.append(") ");
+               screenText.append(" ) ");
            }
        });
 
