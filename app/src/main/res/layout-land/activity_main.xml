@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/button2"
         android:textSize="18sp"
-        android:layout_above="@+id/buttonPOSNEG"
-        android:layout_toEndOf="@+id/buttonPOSNEG" />
+        android:layout_above="@+id/buttonClear"
+        android:layout_toEndOf="@+id/buttonClear" />
 
     <Button
         android:text="3"
@@ -39,9 +39,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/button0"
         android:textSize="18sp"
-        android:layout_alignBaseline="@+id/buttonPOSNEG"
-        android:layout_alignBottom="@+id/buttonPOSNEG"
-        android:layout_toEndOf="@+id/buttonPOSNEG" />
+        android:layout_alignBaseline="@+id/buttonClear"
+        android:layout_alignBottom="@+id/buttonClear"
+        android:layout_toEndOf="@+id/buttonClear" />
 
     <Button
         android:text="+"
@@ -76,17 +76,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonBack"
         android:textSize="18sp"
-        android:layout_alignBaseline="@+id/buttonClear"
-        android:layout_alignBottom="@+id/buttonClear"
+        android:layout_alignBaseline="@+id/buttonCPARENTH"
+        android:layout_alignBottom="@+id/buttonCPARENTH"
         android:layout_toStartOf="@+id/buttonPLUS" />
 
     <Button
-        android:text="Clear"
+        android:text=")"
         android:layout_width="wrap_content"
-        android:id="@+id/buttonClear"
+        android:id="@+id/buttonCPARENTH"
         android:textSize="18sp"
-        android:layout_alignBaseline="@+id/buttonPARENTH"
-        android:layout_alignBottom="@+id/buttonPARENTH"
+        android:layout_alignBaseline="@+id/buttonOPARENTH"
+        android:layout_alignBottom="@+id/buttonOPARENTH"
         android:layout_toStartOf="@+id/buttonBack"
         android:fontFamily="sans-serif-medium"
         android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
         android:id="@+id/button1"
         android:textSize="18sp"
         android:layout_below="@+id/button4"
-        android:layout_alignStart="@+id/buttonPOSNEG" />
+        android:layout_alignStart="@+id/buttonClear" />
 
     <Button
         android:text="6"
@@ -178,7 +178,7 @@
         android:id="@+id/button8"
         android:textSize="18sp"
         android:layout_above="@+id/button5"
-        android:layout_toEndOf="@+id/buttonPARENTH" />
+        android:layout_toEndOf="@+id/buttonOPARENTH" />
 
     <Button
         android:text="="
@@ -190,23 +190,23 @@
         android:layout_toEndOf="@+id/buttonDEC" />
 
     <Button
-        android:text="+/-"
+        android:text="CLEAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonPOSNEG"
+        android:id="@+id/buttonClear"
         android:textSize="18sp"
         android:layout_marginStart="30dp"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/textView4" />
 
     <Button
-        android:text="( )"
+        android:text="( "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonPARENTH"
+        android:id="@+id/buttonOPARENTH"
         android:textSize="18sp"
         android:layout_above="@+id/button7"
-        android:layout_toStartOf="@+id/buttonClear" />
+        android:layout_toStartOf="@+id/buttonCPARENTH" />
 
     <EditText
         android:layout_width="wrap_content"

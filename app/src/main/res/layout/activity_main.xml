@@ -66,8 +66,8 @@
         android:text="Back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/buttonClear"
-        android:layout_toEndOf="@+id/buttonClear"
+        android:layout_alignTop="@+id/buttonCPARENTH"
+        android:layout_toEndOf="@+id/buttonCPARENTH"
         android:id="@+id/buttonBack"
         android:textSize="24sp" />
 
@@ -131,11 +131,11 @@
         android:textSize="24sp" />
 
     <Button
-        android:text="+/-"
+        android:text="CLEAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:id="@+id/buttonPOSNEG"
+        android:id="@+id/buttonClear"
         android:layout_below="@+id/button3"
         android:layout_toEndOf="@+id/textView2"
         android:textSize="24sp" />
@@ -165,12 +165,12 @@
         android:textSize="24sp" />
 
     <Button
-        android:text="( )"
+        android:text="("
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/buttonClear"
-        android:layout_toStartOf="@+id/buttonClear"
-        android:id="@+id/buttonPARENTH"
+        android:layout_alignBottom="@+id/buttonCPARENTH"
+        android:layout_toStartOf="@+id/buttonCPARENTH"
+        android:id="@+id/buttonOPARENTH"
         android:textSize="24sp" />
 
     <Button
@@ -189,9 +189,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/button0"
         android:textSize="24sp"
-        android:layout_alignBaseline="@+id/buttonPOSNEG"
-        android:layout_alignBottom="@+id/buttonPOSNEG"
-        android:layout_toEndOf="@+id/buttonPOSNEG" />
+        android:layout_alignBaseline="@+id/buttonClear"
+        android:layout_alignBottom="@+id/buttonClear"
+        android:layout_toEndOf="@+id/buttonClear" />
 
     <Button
         android:text="="
@@ -213,14 +213,13 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/textView2"
         android:textSize="36sp"
-        android:layout_above="@+id/buttonPARENTH"
         android:textAlignment="viewStart" />
 
     <Button
-        android:text="Clear"
+        android:text=")"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonClear"
+        android:id="@+id/buttonCPARENTH"
         android:textSize="24sp"
         android:layout_marginBottom="15dp"
         android:layout_above="@+id/button8"
